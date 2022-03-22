@@ -4,7 +4,6 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
-    'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -15,6 +14,9 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    '@typescript-eslint/semi': ['error', 'never'],
+    indent: ['error', 2],
     quotes: ['error', 'single'],
+    semi: ['error', 'never'],
   },
-};
+}
