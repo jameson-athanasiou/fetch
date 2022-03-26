@@ -15,8 +15,16 @@ module.exports = {
   ],
   rules: {
     '@typescript-eslint/semi': ['error', 'never'],
+    'import/extensions': 0,
     indent: ['error', 2],
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
 }
